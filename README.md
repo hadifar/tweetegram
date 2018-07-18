@@ -15,12 +15,12 @@ In this tutorial we create a simple app that send your tweet into your telegram 
 
 First of all, let's do twitter part. Go to [this](https://apps.twitter.com/) link and create a new App. Fill all necessary forms (name, description, and webiste) in that page and press `Create your Twitter application`. 
 
-![Create an application](https://drive.google.com/file/d/1US7-4ASNFzSVoMwuBW9HtefP7w4QAHHQ/view?usp=sharing)
+![Create an application](https://github.com/hadifar/tweetegram/blob/master/images/create_an_application.png)
 
 
 In the next page go to the `Keys and Access Tokens` tab section, to see your *API key* and *API secret*. In this tab and at the end of the page, click on `Create my access token` button. It will generate *Access token* and *Acess token secret*. These 4 keys are necessary for communicating with Twitter API.
 
-![Generate All nessary keys and tokens](https://drive.google.com/open?id=1og37imML6NThRgvluHspfrhMv4x271Qm)
+![Generate All nessary keys and tokens](https://github.com/hadifar/tweetegram/blob/master/images/token_access.png)
 
 
 Twitter part is almost done. You can test your tokens simple application like bellow:
