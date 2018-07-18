@@ -1,4 +1,4 @@
 # Tweetegram
 
 
-A simple app for sending your tweets into your channel.
+A simple app for sending your tweets into your telegram channel.
