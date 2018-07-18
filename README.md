@@ -26,35 +26,36 @@ In the next page go to the `Keys and Access Tokens` tab section, to see your *AP
 Twitter part is almost done. You can test your tokens simple application like bellow:
 """
 
-!pip install tweepy
+    !pip install tweepy
 
-import json
+    import json
 
-from tweepy import OAuthHandler
-from tweepy import Stream
-from tweepy import StreamListener
+    from tweepy import OAuthHandler
+    from tweepy import Stream
+    from tweepy import StreamListener
 
-class Listener(StreamListener):
+    class Listener(StreamListener):
   
-   def on_data(self, data):
+      def on_data(self, data):
       
-        all_data = json.loads(data)
+            all_data = json.loads(data)
 
-        tweet = all_data.get("text")
-        print(tweet)
-        return True
+            tweet = all_data.get("text")
+            print(tweet)
+            return True
+
+
 
 # Replace your keys otherwise its not work
-API_KEY= "JXyUTTY5PDumdFave6JS2xbVC"
-API_SECRET = "W9DCxTEX5HlL2Hb5i6UAZaSZ7CdLgTvHpluJv39Ce2rO0Zjp4U"
-ACCESS_TOKEN  = "2819616027-clMvryugR0JtRcPCKJqTZsllGm8YlY14CAOjOPi"
-ACCESS_TOKEN_SECRET = "uq0UQna5r24K5wISlro7e1quH5AXo9s5EzIdkapxtZjoP"
-
-auth = OAuthHandler(API_KEY, API_SECRET)
-auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
-stream = Stream(auth, Listener())
-
-stream.filter(track=['google'])
+    API_KEY= "JXyUTTY5PDumdFave6JS2xbVC"
+    API_SECRET = "W9DCxTEX5HlL2Hb5i6UAZaSZ7CdLgTvHpluJv39Ce2rO0Zjp4U"
+    ACCESS_TOKEN  = "2819616027-clMvryugR0JtRcPCKJqTZsllGm8YlY14CAOjOPi"
+    ACCESS_TOKEN_SECRET = "uq0UQna5r24K5wISlro7e1quH5AXo9s5EzIdkapxtZjoP"
+    
+    auth = OAuthHandler(API_KEY, API_SECRET)
+    auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
+    stream = Stream(auth, Listener())
+    stream.filter(track=['google'])
 
 """This piece of code will track all tweets with 'google' keyword and print the text for you. That's cool isn't it? Now let's inetegrate our Twitter API with Telegram.
 
