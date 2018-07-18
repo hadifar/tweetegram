@@ -44,7 +44,7 @@ class Listener(StreamListener):
         print(tweet)
         return True
 
-# replace your keys (it's not gonna work)
+# Replace your keys otherwise its not work
 API_KEY= "JXyUTTY5PDumdFave6JS2xbVC"
 API_SECRET = "W9DCxTEX5HlL2Hb5i6UAZaSZ7CdLgTvHpluJv39Ce2rO0Zjp4U"
 ACCESS_TOKEN  = "2819616027-clMvryugR0JtRcPCKJqTZsllGm8YlY14CAOjOPi"
