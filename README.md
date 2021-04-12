@@ -1,13 +1,13 @@
 # Tweetegram
 
 
-In this tutorial we create a simple app that send your tweet into your telegram channel. At the end of tutorial you will be able to:
+In this tutorial, we will create a simple app that send your tweets in your telegram channel. We will cover the following things:
 
 
-1.   Familar with tweepy (famous library for usign twitter API)
-2.   Learn how to use twitter Stream API
-3.   Familar with Telegram Core API
-4.   Make http request in telegram
+1.   We will get familar with tweepy (famous library for twitter API)
+2.   We will learn how to use twitter Stream API
+3.   We will learn how to use Telegram Core API
+4.   We will how to connect telegram bot to twitter API
 
 ---
 
